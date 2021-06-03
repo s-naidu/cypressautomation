@@ -1,0 +1,138 @@
+[
+  {
+    "description": "         application regression",
+    "keyword": "Feature",
+    "name": "e2e ecomerce flow",
+    "line": 1,
+    "id": "e2e-ecomerce-flow",
+    "tags": [],
+    "uri": "ecommerce.feature",
+    "elements": [
+      {
+        "id": "e2e-ecomerce-flow;ecomerce-products-delivery",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Ecomerce products delivery",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I open Ecomerce Page",
+            "result": {
+              "status": "failed",
+              "duration": 15314000000,
+              "error_message": "CypressError: Timed out after waiting `10000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `10000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n    at timedOutWaitingForPageLoad (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:138001:13)\n    at https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:139021:16\n    at tryCatcher (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:10798:23)\n    at https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:5920:41\n    at tryCatcher (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:10798:23)\n    at Promise._settlePromiseFromHandler (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:8733:31)\n    at Promise._settlePromise (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:8790:18)\n    at Promise._settlePromise0 (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:8835:10)\n    at Promise._settlePromises (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:8911:18)\n    at _drainQueueStep (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:5505:12)\n    at _drainQueue (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:5498:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:5514:5)\n    at Async.drainQueues (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:5384:14)\nFrom Your Spec Code:\n    at Context.eval (https://rahulshettyacademy.com/__cypress/tests?p=cypress\\integration\\examples\\BDD\\ecommerce.feature:60:6)\n    at Context.resolveAndRunStepDefinition (https://rahulshettyacademy.com/__cypress/tests?p=cypress\\integration\\examples\\BDD\\ecommerce.feature:12490:29)\n    at Context.eval (https://rahulshettyacademy.com/__cypress/tests?p=cypress\\integration\\examples\\BDD\\ecommerce.feature:11822:35)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I add items to Cart",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Validate the total prices",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "select the country submit and verify Thankyou",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "e2e-ecomerce-flow;filling-the-from-to-shop",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Filling the from to shop",
+        "tags": [
+          {
+            "name": "@Smoke",
+            "line": 11
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "I open Ecomerce Page",
+            "result": {
+              "status": "passed",
+              "duration": 4701000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "name",
+                      "gender"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "bob",
+                      "Male"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I fill the from details",
+            "result": {
+              "status": "passed",
+              "duration": 3331000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "validate the forms behaviour",
+            "result": {
+              "status": "passed",
+              "duration": 944000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "select the shop Page",
+            "result": {
+              "status": "passed",
+              "duration": 10915000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
